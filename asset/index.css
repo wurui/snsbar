@@ -1,3 +1,58 @@
-.oxmod-snsbar{
-/* CSS */
- }
+@font-face {
+  font-family: 'oxmod-snsbar-iconfont';
+  /* project id 200070 */
+  src: url('//at.alicdn.com/t/font_2bth5cv8f4ea5rk9.eot');
+  src: url('//at.alicdn.com/t/font_2bth5cv8f4ea5rk9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_2bth5cv8f4ea5rk9.woff') format('woff'), url('//at.alicdn.com/t/font_2bth5cv8f4ea5rk9.ttf') format('truetype'), url('//at.alicdn.com/t/font_2bth5cv8f4ea5rk9.svg#iconfont') format('svg');
+}
+.oxmod-snsbar {
+  /* CSS */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border: solid 1px #ddd;
+  background-image: linear-gradient(#fff, #dedede, #eee);
+}
+.oxmod-snsbar .cell {
+  display: inline-block;
+  padding: 0 10px;
+}
+.oxmod-snsbar .bt-comment {
+  height: 30px;
+  border-radius: 15px;
+  border: solid 1px #999;
+  padding: 0 20px;
+  background-color: #fff;
+  color: #999;
+}
+.oxmod-snsbar .bt-comment:before {
+  font-family: 'oxmod-snsbar-iconfont';
+  content: '\e70e  ';
+  color: #999;
+}
+.oxmod-snsbar .bt-fav {
+  border: none;
+  background-color: transparent;
+}
+.oxmod-snsbar .bt-fav:before {
+  font-family: 'oxmod-snsbar-iconfont';
+  content: '\e7c4  ';
+  color: #999;
+  font-size: 1.8rem;
+}
+.oxmod-snsbar .bt-share {
+  border: none;
+  background-color: transparent;
+}
+.oxmod-snsbar .bt-share:before {
+  font-family: 'oxmod-snsbar-iconfont';
+  content: '\e89f  ';
+  color: #999;
+  font-size: 1.6rem;
+}
+.oxmod-snsbar .bt-cmt-count {
+  border: solid 1px #c00;
+  color: #c00;
+  background-color: #eee;
+}
