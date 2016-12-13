@@ -5,7 +5,7 @@
         <div class="J_OXMod oxmod-snsbar" ox-mod="snsbar">
             <div class="snsbar">
                 <span class="cell">
-                    <button type="button" data-anchor="comment" class="bt-comment">Comment...</button>
+                    <button type="button" data-action="comment" class="bt-comment">Comment...</button>
                 </span>
                 <span class="cell">
                     <button type="button" class="bt-cmt-count">1230</button>
@@ -17,13 +17,15 @@
                     <button type="button" class="bt-share"></button>
                 </span>
             </div>
-            <div data-action="comment" class="commentform">
-                <p class="comment-head">
-                    <button>Cancel</button>
-                    <span>Comment</span>
-                    <button>Send</button>
-                </p>
-                <textarea></textarea>
+            <div data-anchor="comment" class="commentform">
+                <form>
+                    <p class="comment-head">
+                        <button type="reset" data-action="cancel">Cancel</button>
+                        <span>Comment</span>
+                        <button>Send</button>
+                    </p>
+                    <textarea name="content"></textarea>
+                </form>
             </div>
         </div>
     </xsl:template>

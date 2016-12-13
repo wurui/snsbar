@@ -98,7 +98,7 @@
 .oxmod-snsbar[data-acting='comment'] > .snsbar {
   display: none;
 }
-.oxmod-snsbar[data-acting='comment'] > [data-action='comment'] {
+.oxmod-snsbar[data-acting='comment'] > [data-anchor='comment'] {
   display: block;
 }
 .oxmod-snsbar .commentform {
