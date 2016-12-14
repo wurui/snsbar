@@ -3,7 +3,7 @@
   <xsl:output method="html" doctype-public="" encoding="UTF-8"/>
 
   <xsl:template match="/root">
-    <html>
+    <html env="{env/domain}">
       <head>
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
         <title>snsbar Demo</title>

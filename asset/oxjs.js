@@ -2,14 +2,51 @@
  * Created by wurui on 13/12/2016.
  */
 define([], function () {
+    var env=document.documentElement.getAttribute('env'),
+        isLocal=env=='local';
 
+    var callapi=function(uri,data,cb){
+        var splt=uri.split('@'),
+            path=splt[0],
+            ds_id=splt[1];
+        var remoteUrl='http://local.openxsl.com/callapi/'+path;
+        if(isLocal){
+            var type='GET',
+                dataType='jsonp';
+        }else{
+            type='POST';
+            dataType='json'
+        }
+
+        $.ajax({
+            url:remoteUrl,
+            data:{
+                ds_id:ds_id,
+                data:JSON.stringify(data)
+            },
+            type:type,
+            dataType:dataType,
+            success:function(e){
+                cb()
+            },
+            complete:function(e){
+
+            },
+            error:function(e){
+
+            }
+        });
+
+    };
     return {
-        toast: function () {
-            window.alert.apply(window, arguments)
+        toast: function (content) {
+            $('.J_toast').remove();
+            var $div=$('<div class="toast J_toast"/>').html('<div>'+content+'</div>').appendTo('body');
+            setTimeout(function(){
+                $div.remove();
+            },2500)
         },
-        callapi: function (uri, data, cb) {
-            cb()
-        },
+        callapi:callapi,
         queryString: function (name) {
             var splt = location.search.substr(1).split('&');
 
