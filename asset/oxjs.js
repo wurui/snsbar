@@ -9,7 +9,7 @@ define([], function () {
         var splt=uri.split('@'),
             path=splt[0],
             ds_id=splt[1];
-        var remoteUrl='http://local.openxsl.com/callapi/'+path;
+        var remoteUrl='http://192.168.1.103:9000/callapi/'+path;
         if(isLocal){
             var type='GET',
                 dataType='jsonp';
@@ -26,8 +26,8 @@ define([], function () {
             },
             type:type,
             dataType:dataType,
-            success:function(e){
-                cb()
+            success:function(r){
+                cb(r)
             },
             complete:function(e){
 
