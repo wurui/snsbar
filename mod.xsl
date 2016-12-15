@@ -62,8 +62,8 @@
             <script type="text/tpl" class="J_tplCmtList">
                 <![CDATA[
 {{#data}}<li class="comment-li">
-<span class="pic" style="background-image:url({{user.avatar}})"></span><h4 class="user-name">{{user.name}} <span class="time">{{displayTime}}</span></h4>
-<p class="user-tag">{{user.tag}}</p>
+<span class="pic" style="background-image:url({{user.avatar}})"></span><h4 class="user-name">{{user.name}} <span class="user-tag">- {{user.tag}}</span></h4>
+<p class="time">{{displayTime}}</p>
 <h3 class="content">
 {{content}}
 </h3>
