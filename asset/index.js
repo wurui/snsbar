@@ -1,5 +1,7 @@
-define(['mustache','./oxjs'], function (Mustache,Lib) {
-
+define(['mustache','oxjs'], function (Mustache,Lib) {
+    Lib.config({
+        devHost:'http://192.168.1.103:9000/'
+    })
     var target_id = Lib.queryString('_id');
     var tplCmtList,fixedBar,cmtList;
     var login_uid;

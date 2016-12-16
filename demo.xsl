@@ -20,7 +20,8 @@
             paths: {
               zepto: 'https://oxm1.cc/js/zepto.min',
               mustache: 'https://oxm1.cc/js/mustache',
-              oxm:'https://oxm1.cc/oxm'
+              oxm:'https://oxm1.cc/oxm',
+              oxjs:'https://oxm1.cc/js/oxjs'
             }
           });
           require(['zepto','asset/index'],function(undefine,Mod){
