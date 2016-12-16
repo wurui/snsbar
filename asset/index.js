@@ -1,4 +1,5 @@
 define(['mustache','./oxjs'], function (Mustache,Lib) {
+
     var target_id = Lib.queryString('_id');
     var tplCmtList,fixedBar,cmtList;
     var login_uid;
@@ -146,7 +147,8 @@ define(['mustache','./oxjs'], function (Mustache,Lib) {
             });
 
             this.initFixedbar();
-            this.initCmtList()
+            this.initCmtList();
+            //this.initWX();
 
         },
         initFixedbar:function(){
