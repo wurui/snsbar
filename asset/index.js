@@ -49,7 +49,8 @@ define(['mustache','oxjs'], function (Mustache,Lib) {
             fixedBar.attr('data-acting', 'share')
         },
         cmtlist:function(ctx){
-            window.scrollTo(0,ctx.children('.J_CmtList').offset().top);
+            location.href='#commentlist'
+            //window.scrollTo(0,ctx.children('.J_CmtList').offset().top);
         },
         fav:function(ctx){
             var btnFav=ctx.find('.J_fav'),
@@ -135,7 +136,7 @@ define(['mustache','oxjs'], function (Mustache,Lib) {
             login_uid=$mod.attr('data-uid');
             fixedBar=$mod.children('.J_Fixedbar');
             cmtList=$mod.children('.J_CmtList');
-            $('body').css('padding-bottom',40)
+            //$('body').css('padding-bottom',40)
 
             tplCmtList= $.trim($mod.find('.J_tplCmtList').html());
             $mod.on('click', function (e) {

@@ -12,8 +12,11 @@
         <script src="https://oxm1.cc/js/require.js"></script>
       </head>
       <body>
-        <div class="layout">
+        <oxbottombar>
           <xsl:call-template name="wurui.snsbar" />
+        </oxbottombar>
+        <div class="layout">
+
         </div>
         <script><![CDATA[
           require.config({

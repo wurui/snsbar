@@ -4,10 +4,12 @@
         <!-- className 'J_OXMod' required  -->
 
         <div class="J_OXMod oxmod-snsbar" ox-mod="snsbar" data-uid="{login/uid}">
+            <!--
             <section class="J_CmtList commentlist">
                 <h1 class="title">热门评论</h1>
                 <ul class="J_cmtUL"></ul>
             </section>
+            -->
             <section class="J_Fixedbar fixed-bottom">
 
                 <div class="snsbar">

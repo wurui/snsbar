@@ -4,12 +4,24 @@
   src: url('//at.alicdn.com/t/font_fyujie3s48kf0f6r.eot');
   src: url('//at.alicdn.com/t/font_fyujie3s48kf0f6r.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_fyujie3s48kf0f6r.woff') format('woff'), url('//at.alicdn.com/t/font_fyujie3s48kf0f6r.ttf') format('truetype'), url('//at.alicdn.com/t/font_fyujie3s48kf0f6r.svg#iconfont') format('svg');
 }
+oxtopbar,
+oxbottombar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+oxtopbar {
+  top: 0;
+  min-height: 24px;
+}
+oxbottombar {
+  bottom: 0;
+  min-height: 32px;
+}
 .oxmod-snsbar {
   /* CSS */
 }
 .oxmod-snsbar .fixed-bottom {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   background-color: #fff;
   box-shadow: 1px -1px 1px rgba(200, 200, 200, 0.7);
