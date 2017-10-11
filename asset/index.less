@@ -34,9 +34,9 @@ oxbottombar{
 
   .snsbar{
 
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
+    display: -webkit-flex;
+    -webkit-justify-content:space-around;
+    -webkit-align-items:center;
     line-height: 40px;
     height:40px;
   }
@@ -71,6 +71,8 @@ oxbottombar{
     padding:0 30px;
     background-color: #fff;
     color:#999;
+    white-space: nowrap;
+    overflow: hidden;
     &:before{
       font-family: 'oxmod-snsbar-iconfont';
       content: '\e70e  ';
